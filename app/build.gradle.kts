@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+//    id("maven-publish")
 }
 
 android {
@@ -12,7 +13,7 @@ android {
         minSdk = 26
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0.2"
+        versionName = "1.0.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -44,3 +45,15 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            create<MavenPublication>("maven") {
+//                groupId = "com.github.jeikenberg73"
+//                artifactId = "EncodeDecodeLib"
+//                version = "1.0.2"
+//            }
+//        }
+//    }
+//}

@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("maven-publish")
 }
 
 android {
@@ -41,17 +40,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                from (components["release"])
-                groupId = "com.github.jeikenberg73"
-                artifactId = "EncodeDecodeLib"
-                version = "1.0.2"
-            }
-        }
-    }
 }
