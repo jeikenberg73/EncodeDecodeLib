@@ -43,12 +43,15 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "com.github.jeikenberg73"
-            artifactId = "EncodeDecodeLib"
-            version = "1.0.0"
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from (components["release"])
+                groupId = "com.github.jeikenberg73"
+                artifactId = "EncodeDecodeLib"
+                version = "1.0.2"
+            }
         }
     }
 }
