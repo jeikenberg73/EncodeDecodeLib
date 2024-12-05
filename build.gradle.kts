@@ -12,7 +12,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.jeikenberg73"
                 artifactId = "EncodeDecodeLib"
-                version = "1.0.2"
+                version = "1.0.3"
             }
         }
     }
