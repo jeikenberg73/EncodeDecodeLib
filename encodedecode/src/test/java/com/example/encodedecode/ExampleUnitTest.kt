@@ -1,5 +1,7 @@
 package com.example.encodedecode
 
+import com.example.encodedecode.DecodeString.decodeString
+import com.example.encodedecode.EncodeString.encodeString
 import org.junit.Test
 
 import org.junit.Assert.*
