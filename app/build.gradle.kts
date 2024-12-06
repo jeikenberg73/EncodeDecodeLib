@@ -11,8 +11,8 @@ android {
         applicationId = "com.example.encodedecode"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.3"
+        versionCode = 4
+        versionName = "1.0.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -44,15 +44,3 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
-
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            create<MavenPublication>("maven") {
-//                groupId = "com.github.jeikenberg73"
-//                artifactId = "EncodeDecodeLib"
-//                version = "1.0.2"
-//            }
-//        }
-//    }
-//}
